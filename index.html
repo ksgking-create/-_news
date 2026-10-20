@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="행정안전부 지방공무원 인사교류 활성화 및 채용제도 개선 입법예고 보도자료를 쉽게 읽을 수 있도록 정리한 안내 페이지입니다.">
+  <title>공무원 인사교류 활성화 및 채용제도 개선 | 행정안전부</title>
+  <style>
+    :root {
+      --navy: #102b52;
+      --blue: #175fbd;
+      --muted: #586982;
+      --text: #1d2b3f;
+      --border: #dce5f0;
+      --soft: #f3f7fc;
+      --white: #ffffff;
+      --sky: #eaf3ff;
+      --teal: #08796b;
+      --shadow: 0 18px 48px rgba(17, 51, 92, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); background: #f8fafc; font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; line-height: 1.7; word-break: keep-all; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #e6b34b; outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; white-space: nowrap; }
+    .skip { position: absolute; top: -100px; left: 12px; background: white; padding: 12px; z-index: 99; }
+    .skip:focus { top: 12px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .top { background: var(--white); border-bottom: 1px solid var(--border); }
+    .top-in { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .brand { display: inline-flex; gap: 12px; align-items: center; font-size: 17px; font-weight: 800; letter-spacing: -.03em; color: var(--navy); }
+    .brand-icon { display: grid; place-items: center; background: var(--navy); color: white; font-size: 13px; font-weight: 800; width: 40px; height: 40px; border-radius: 11px; }
+    .top-side { font-size: 13px; font-weight: 700; color: var(--muted); }
+    .hero { position: relative; overflow: hidden; background: linear-gradient(125deg, #0b2549 0%, #123e77 64%, #1d67ac 100%); color: white; }
+    .hero:before { content: ""; position: absolute; top: -100px; right: -120px; width: 540px; height: 540px; border: 1px solid rgba(255, 255, 255, .12); border-radius: 50%; box-shadow: 0 0 0 64px rgba(255,255,255,.035),0 0 0 140px rgba(255,255,255,.025); }
+    .hero-in { position: relative; padding-top: 72px; padding-bottom: 112px; }
+    .eyebrow { display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,.32); border-radius: 50px; padding: 5px 14px; color: #dceaff; background: rgba(255,255,255,.09); font-size: 13px; font-weight: 750; }
+    h1 { margin: 23px 0 19px; line-height: 1.35; font-size: clamp(31px, 4vw, 48px); letter-spacing: -.065em; max-width: 850px; }
+    .hero-lead { max-width: 770px; color: #dfebfb; font-size: 17px; margin: 0; line-height: 1.9; }
+    .hero-meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; font-size: 13px; color: #e3effd; }
+    .hero-meta span { border-left: 2px solid #79b4ed; padding-left: 12px; }
+    .highlights-wrap { margin-top: -61px; position: relative; z-index: 2; }
+    .highlights { background: white; border-radius: 19px; box-shadow: var(--shadow); padding: 29px 34px; border: 1px solid #e5edf6; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 19px; }
+    .highlight { padding: 8px 16px; border-right: 1px solid var(--border); }
+    .highlight:first-child { padding-left: 0; }
+    .highlight:last-child { border-right: 0; }
+    .highlight-label { display: block; color: var(--blue); font-weight: 800; font-size: 12px; margin-bottom: 8px; }
+    .highlight strong { display: block; font-size: 19px; line-height: 1.5; letter-spacing: -.035em; color: var(--navy); }
+    .highlight p { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+    .navline { display: flex; align-items: center; gap: 10px; margin: 40px 0 11px; flex-wrap: wrap; }
+    .navline strong { font-size: 13px; color: #63738b; margin-right: 8px; }
+    .navline a { display: inline-block; font-size: 13px; font-weight: 800; padding: 9px 15px; background: white; border: 1px solid var(--border); border-radius: 24px; color: var(--navy); }
+    .navline a:hover { border-color: var(--blue); color: var(--blue); }
+    .intro { margin: 36px 0 23px; font-size: 16px; color: #43546b; line-height: 2; }
+    .section { scroll-margin-top: 18px; padding: 32px 0 24px; }
+    .section-head { display: flex; align-items: flex-start; gap: 17px; margin-bottom: 22px; }
+    .section-index { flex: none; width: 53px; height: 53px; border-radius: 16px; display: grid; place-items: center; font-size: 19px; font-weight: 850; background: var(--sky); color: var(--blue); }
+    .section-index.second { color: var(--teal); background: #e2f5ef; }
+    .kicker { color: var(--blue); font-size: 13px; margin: 0 0 4px; font-weight: 850; letter-spacing: .02em; }
+    .section h2 { margin: 0; font-size: 28px; line-height: 1.4; letter-spacing: -.06em; color: var(--navy); }
+    .section-desc { margin: 9px 0 0; color: var(--muted); font-size: 14px; }
+    .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px; }
+    .cards li { background: white; border: 1px solid var(--border); border-radius: 15px; padding: 24px 25px; min-height: 155px; }
+    .card-top { display: flex; align-items: center; gap: 10px; margin: 0 0 9px; }
+    .number { display: inline-grid; flex: none; place-items: center; width: 29px; height: 29px; border-radius: 9px; background: #eaf3ff; color: var(--blue); font-weight: 850; font-size: 12px; }
+    .cards h3 { color: var(--navy); font-size: 17px; letter-spacing: -.05em; line-height: 1.5; margin: 0; }
+    .cards p { margin: 0; color: #4e6078; font-size: 14px; line-height: 1.85; }
+    .cards strong { color: var(--blue); }
+    .feature { background: #eff7f5; border: 1px solid #cde9e1; }
+    .feature .number { background: #d4efe8; color: #08796b; }
+    .feature strong { color: #076e62; }
+    .dates { margin: 42px 0 30px; padding: 31px 34px; background: white; border: 1px solid var(--border); border-radius: 16px; }
+    .dates .eyeline { font-size: 13px; color: var(--blue); font-weight: 800; }
+    .dates h2 { font-size: 24px; color: var(--navy); margin: 5px 0 12px; }
+    .date-pill { display: inline-block; padding: 8px 18px; border-radius: 8px; font-size: 20px; font-weight: 850; letter-spacing: -.04em; background: #edf4fc; color: #164c90; }
+    .dates p { font-size: 14px; color: #576b81; margin: 13px 0 0; }
+    .quote-box { margin: 0 0 52px; padding: 36px; background: #eef4fb; border-left: 5px solid var(--blue); border-radius: 0 16px 16px 0; }
+    .quote-box h2 { font-size: 20px; margin: 0 0 13px; color: var(--navy); }
+    blockquote { margin: 0; color: #254365; font-size: 17px; line-height: 1.95; font-weight: 650; letter-spacing: -.02em; }
+    .quote-source { margin-top: 18px; color: #526d8f; font-size: 13px; font-weight: 800; text-align: right; }
+    .notice { margin: 0 0 46px; background: #fffdf6; border: 1px solid #ece2c8; border-radius: 12px; padding: 17px 22px; color: #645633; font-size: 13px; line-height: 1.8; }
+    footer { padding: 29px 0 41px; border-top: 1px solid #dce5f0; background: white; }
+    .foot { display: flex; justify-content: space-between; gap: 15px; align-items: center; flex-wrap: wrap; }
+    .foot strong { color: var(--navy); font-size: 15px; }
+    .foot span { color: #687990; font-size: 12px; }
+    @media (max-width: 720px) {
+      .container { padding: 0 17px; }
+      .top-in { min-height: 62px; }
+      .brand { font-size: 15px; }
+      .top-side { font-size: 11px; }
+      .hero-in { padding: 56px 0 93px; }
+      h1 { font-size: 32px; }
+      .hero-lead { font-size: 15px; }
+      .highlights { grid-template-columns: 1fr; gap: 0; padding: 15px 23px; }
+      .highlight, .highlight:first-child { padding: 15px 0; border-right: 0; border-bottom: 1px solid var(--border); }
+      .highlight:last-child { border-bottom: 0; }
+      .highlight strong { font-size: 17px; }
+      .cards { grid-template-columns: 1fr; }
+      .cards li { min-height: 0; padding: 22px; }
+      .section { padding-top: 27px; }
+      .section h2 { font-size: 23px; }
+      .section-index { width: 45px; height: 45px; border-radius: 12px; }
+      .quote-box { padding: 25px 23px; }
+      blockquote { font-size: 15px; }
+      .dates { padding: 24px; }
+      .date-pill { font-size: 17px; }
+    }
+    @media print {
+      body { background: white; }
+      .hero { background: white !important; color: black; }
+      .hero * { color: black !important; }
+      .hero:before, .navline { display: none; }
+      .hero-in { padding: 20px 0 35px; }
+      .highlights-wrap { margin-top: 0; }
+      .highlights, .cards li, .quote-box, .dates { box-shadow: none; break-inside: avoid; }
+      .section { break-before: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="top">
+    <div class="container top-in">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">행안부</span><span>행정안전부</span></div>
+      <span class="top-side">지방인사제도과 · 보도자료 안내</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-in">
+        <span class="eyebrow">지방공무원 임용령 · 지방공무원 평정규칙 개정안</span>
+        <h1 id="page-title">공무원 인사교류 활성화 및<br>채용제도 개선 입법예고</h1>
+        <p class="hero-lead">중앙부처·지방정부·민간기업 간 프로젝트 기반 인사교류를 활성화하고, 수험생의 부담을 완화하는 지방공무원 인사제도 개선 내용을 안내합니다.</p>
+        <div class="hero-meta"><span>입법예고 2026. 5. 11. ~ 6. 10.</span><span>행정안전부 지방인사제도과</span></div>
+      </div>
+    </section>
+
+    <div class="container highlights-wrap" aria-label="보도자료 주요 내용 요약">
+      <div class="highlights">
+        <div class="highlight"><span class="highlight-label">인사교류 혜택</span><strong>승진 소요 연수<br>최대 1년 단축</strong><p>해당 직위 교류 기간의 절반을 최대 1년 범위 내에서 감면</p></div>
+        <div class="highlight"><span class="highlight-label">우수 근무자</span><strong>1년 이상 근무 시<br>특별승진 기회</strong><p>핵심 인사교류 직위·민간기업 전담공무원 대상</p></div>
+        <div class="highlight"><span class="highlight-label">채용제도 개선</span><strong>2027년부터 8급 공채<br>한국사 시험 대체</strong><p>한국사능력검정시험 3급 이상으로 대체</p></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="navline" aria-label="주요 내용 이동">
+        <strong>빠르게 살펴보기</strong>
+        <a href="#personnel">① 인사 인센티브</a>
+        <a href="#recruitment">② 채용제도 개선</a>
+        <a href="#schedule">입법예고 일정</a>
+      </nav>
+
+      <p class="intro">이번 개정안은 국책사업이나 지역 현안 대응을 위한 <b>핵심 인사교류</b> 직위 근무자와 지역 투자 유치를 전담하는 <b>민간기업 전담공무원</b>에 대한 인센티브를 마련하고, 지방공무원 채용제도를 개선하는 내용을 담고 있습니다.</p>
+
+      <section id="personnel" class="section" aria-labelledby="personnel-title">
+        <div class="section-head">
+          <div class="section-index" aria-hidden="true">01</div>
+          <div><p class="kicker">인사교류 참여자 지원</p><h2 id="personnel-title">인사 인센티브</h2><p class="section-desc">핵심 인사교류 직위와 민간기업 전담공무원에 대한 승진·평가 혜택</p></div>
+        </div>
+        <ul class="cards">
+          <li><div class="card-top"><span class="number">01</span><h3>승진 소요 연수 단축</h3></div><p>핵심 인사교류 직위 또는 민간기업 전담공무원 근무 시 해당 직위 <strong>교류 기간의 절반</strong>을 <strong>최대 1년</strong> 범위 내에서 승진 소요 연수에서 감면합니다.</p></li>
+          <li><div class="card-top"><span class="number">02</span><h3>특별승진 기회 부여</h3></div><p>해당 직위에서 <strong>1년 이상 근무</strong>하며 우수한 성과를 낸 공무원에게 <strong>특별승진의 기회</strong>를 부여합니다.</p></li>
+          <li><div class="card-top"><span class="number">03</span><h3>대우공무원 혜택 확대</h3></div><p>기존 인사교류자에게 적용되던 <strong>대우공무원 산정 시 교류 기간 경력 100% 단축</strong> 혜택을 민간기업 전담공무원에게도 확대합니다.</p></li>
+          <li><div class="card-top"><span class="number">04</span><h3>평가·성과급 보장</h3></div><p>인사교류자의 평정 단위를 분리하고, 근무성적평정 <strong>최소 '우'</strong>, 성과급 <strong>최소 'A'</strong> 등급을 의무 보장합니다. 최상위 등급 우수 성과자에게는 특별성과가산금을 지급할 수 있는 근거도 마련합니다.</p></li>
+        </ul>
+      </section>
+
+      <section id="recruitment" class="section" aria-labelledby="recruitment-title">
+        <div class="section-head">
+          <div class="section-index second" aria-hidden="true">02</div>
+          <div><p class="kicker">수험생 부담 완화 · 우수 인재 채용</p><h2 id="recruitment-title">채용제도 개선</h2><p class="section-desc">지방공무원 공채 및 경력경쟁 채용 제도 개선</p></div>
+        </div>
+        <ul class="cards">
+          <li class="feature"><div class="card-top"><span class="number">01</span><h3>8급 공채 한국사 과목 대체</h3></div><p><strong>2027년부터</strong> 8급 공채 한국사 과목을 9급과 동일하게 <strong>한국사능력검정시험(3급 이상)</strong>으로 대체합니다.</p></li>
+          <li class="feature"><div class="card-top"><span class="number">02</span><h3>경력 단축 및 추천채용 확대</h3></div><p>특정 분야 경력경쟁채용시험의 필요 경력을 <strong>1년 범위 내</strong>에서 단축할 수 있는 근거를 마련하고, 우수 인재 추천채용제 대상 직급을 <strong>7급까지</strong> 확대합니다.</p></li>
+          <li class="feature"><div class="card-top"><span class="number">03</span><h3>취약 청년 공직 진출 지원</h3></div><p>9급 공채 저소득층 구분모집 대상에 <strong>자립준비청년</strong>과 <strong>보호기간 연장청년</strong>을 신규 추가합니다.</p></li>
+          <li class="feature"><div class="card-top"><span class="number">04</span><h3>자격 유지 기간 완화</h3></div><p>기초생활수급자·한부모가족 지원 대상자에게 요구되는 자격 유지 기간을 <strong>2년 이상에서 1년</strong>으로 완화합니다.</p></li>
+        </ul>
+      </section>
+
+      <section id="schedule" class="dates" aria-labelledby="schedule-title">
+        <div class="eyeline">시행 일정</div>
+        <h2 id="schedule-title">입법예고 및 향후 일정</h2>
+        <div class="date-pill">2026. 5. 11. ~ 6. 10.</div>
+        <p>입법예고 기간에는 행정안전부 누리집 또는 대한민국 전자관보를 통해 의견을 제출할 수 있습니다.</p>
+        <p>예고 기간 종료 후 규제심사·법제처 심사를 거쳐 <b>2026년 하반기 중 공포·시행될 예정</b>입니다.</p>
+      </section>
+
+      <section class="quote-box" aria-labelledby="quote-title">
+        <h2 id="quote-title">윤호중 행정안전부 장관 발언</h2>
+        <blockquote>“이번 조치는 프로젝트 기반 인사교류를 통해 대규모 국책사업 등에 참여하는 공무원에게 파격적인 인센티브를 부여해 보다 성공적인 사업 추진을 돕기 위한 것”이라며, “앞으로도 공직사회의 개방성을 확대하고 활력을 제고할 수 있도록 지방인사제도를 적극적으로 개선해 나가겠다”</blockquote>
+        <div class="quote-source">— 윤호중 행정안전부 장관</div>
+      </section>
+
+      <p class="notice"><b>안내</b> · 이 페이지는 제공된 보도자료에 담긴 개정안의 주요 내용을 시민이 읽기 쉽게 정리한 것입니다. 입법예고 당시의 내용이며, 최종 법령 및 시행 내용은 확정된 법령을 통해 확인하시기 바랍니다.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container foot"><strong>행정안전부 · 지방인사제도과</strong><span>담당자 김정민 │ 044-205-3347</span></div>
+  </footer>
+</body>
+</html>
